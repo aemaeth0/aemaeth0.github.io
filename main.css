@@ -60,6 +60,14 @@ table {
           box-sizing: border-box;
 }
 
+section {
+  float: left;
+}
+
+aside {
+  float: right;
+}
+
 .container {
   margin: 60px auto;
   padding-left: 200px;
