@@ -68,6 +68,10 @@ aside {
   float: right;
 }
 
+nav {
+  display: inline-block;
+}
+
 .container {
   margin: 60px auto;
   padding-left: 200px;
