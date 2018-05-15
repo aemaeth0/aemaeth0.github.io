@@ -74,13 +74,15 @@ aside {
 }
 
 .side-img {
-  max-width: 100%;
+  max-width: 80%;
 }
 
 .side-container {
-  width: 200px;
+  width: 250px;
   margin: 0px 0px;
-  padding-top: 150px;
+  padding-top: 100px;
+  font-size: 12px;
+  font-style: italic;
 }
 
 nav {
@@ -98,12 +100,14 @@ nav li {
 
 footer {
 clear: both;
+font-size: 10px;
 }
 
 .footer-container {
   margin: 0px 0px;
   width: 63%;
   padding-left: 475px;
+
 }
 
 /* default container dimensions I was initially using */
@@ -176,7 +180,8 @@ a {
 }
 a:hover {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 body {
