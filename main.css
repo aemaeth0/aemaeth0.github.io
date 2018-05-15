@@ -121,13 +121,17 @@ display: block;
 padding-top: 0;
 }
 
-.logo {
+.logo-container{
 	padding-top: 60px;
   padding-left: 25px;
   padding-bottom: 0px;
-  border-width: 1px;
+  /*
+  border-width: 2px;
   border-color: #ffffff;
-
+  */
+}
+.logo-img {
+    border: 1px solid #242424;
 }
 
 .left {
