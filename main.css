@@ -86,8 +86,9 @@ display: block;
 padding-top: 0;
 }
 
-.top {
+.logo {
 	padding-top: 100px;
+  padding-left: 50px;
 
 }
 
@@ -126,15 +127,18 @@ h2 {
 	font-size: 18px;
 }
 
-.links {
+
+a {
   color: #76D7C4;
-font-size: 14px;
+}
+a:hover {
+  color: #ffffff;
 }
 
 body {
-  font-family: "Grandesign", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #D0D3D4  ;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 hr {
