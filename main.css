@@ -89,10 +89,14 @@ nav {
   /* inline-block seems to wrap the navbar around the section */
   display: inline-block;
   padding-top: 0px;
-  margin: 0px 0px;
+  margin: 0px auto;
   padding-left: 0px;
 
 }
+nav ul {
+  margin: 2px auto;
+}
+
 nav li {
   padding-right: 0px;
   padding-left: 0px;
