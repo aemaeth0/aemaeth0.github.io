@@ -86,7 +86,7 @@ nav li {
 }
 
 footer {
-display: block;
+clear: both;
 }
 
 
