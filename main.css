@@ -105,7 +105,8 @@ nav li {
 
 footer {
 clear: both;
-font-size: 10px;
+font-size: 12px;
+margin: 200px 200px;
 }
 
 .footer-container {
