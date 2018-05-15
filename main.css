@@ -114,12 +114,12 @@ float: ;
 h1, h3, h4, h5 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: .08rem;
-  color: #D0D3D4  ;
+  color: #979A9A  ;
   margin-bottom: 5px;
 }
 
 p {
-  color: #D0D3D4  ;
+  color: #979A9A  ;
   font: 16px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -137,7 +137,7 @@ a:hover {
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #D0D3D4  ;
+  color: #979A9A  ;
   font-size: 3rem;
 }
 
