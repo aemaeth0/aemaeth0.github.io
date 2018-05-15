@@ -73,6 +73,16 @@ aside {
   width: 30%;
 }
 
+.side-img {
+  max-width: 100%;
+}
+
+.side-container {
+  width: 200px;
+  margin: 0px 0px;
+  padding-top: 150px;
+}
+
 nav {
   /* inline-block seems to wrap the navbar around the section */
   display: block;
@@ -88,6 +98,12 @@ nav li {
 
 footer {
 clear: both;
+}
+
+.footer-container {
+  margin: 0px 0px;
+  width: 63%;
+  padding-left: 475px;
 }
 
 /* default container dimensions I was initially using */
