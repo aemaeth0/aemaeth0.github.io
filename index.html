@@ -9,8 +9,20 @@
 	return "aemaeth0.github.io" + "/" + imgName;
 }
 	document.onload = function(){
-	document.getElementById('testing').src= randomImg();
+	document.getElementById('img_1').src= randomImg();
 	}
+}
+</script>
+<script>
+function randomImg3()
+{
+var randomNumber = Math.floor(Math.random() * 12) + 1;
+var imgName = "img_" + randomNumber + ".jpg";
+return imgName;
+}
+document.onload = function(){
+document.getElementById('img_1').src= randomImg3();
+}
 }
 </script>
 
@@ -61,7 +73,7 @@ document.getElementById('testing2').src= randomImg2();
 	<!-- do not display this yet <img class = "side-img" src= "1.jpg"></p> -->
 	<img id="testing" src="randomImg()">
 <img id="testing">
-<img id=testing>
+<img id=img_1>
 <img id=testing2>
 <img id="testing" src="">
 <img id=testing src="">
