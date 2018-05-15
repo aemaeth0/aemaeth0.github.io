@@ -13,6 +13,20 @@
 	}
 }
 </script>
+
+<script>
+function randomImg2()
+{
+var randomNumber = Math.floor(Math.random() * 12) + 1;
+var imgName = "img_" + randomNumber + ".jpg";
+return "aemaeth0.github.io" + "/" + imgName;
+}
+document.onload = function(){
+document.getElementById('testing2').src= randomImg2();
+}
+}
+</script>
+
 <link rel="stylesheet" href="main.css">
 <meta charset="8-uf">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -48,8 +62,9 @@
 	<img id="testing" src="randomImg()">
 <img id="testing">
 <img id=testing>
+<img id=testing2>
 <button type="button" onclick="randomImg()">Try it</button>
-Testing3
+Testing7
 	"I imagine that right now, you're feeling a bit like Alice. Hmm? Tumbling down the rabbit hole?" - Morpheus
 </div>
 </aside>
