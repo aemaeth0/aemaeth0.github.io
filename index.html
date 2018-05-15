@@ -1,19 +1,13 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-
-<script type="text/javascript">
-function randomImgCorrect()
-{
-var randomNumber = Math.floor(Math.random() * 12) + 1;
-var imgName = "aemaeth0.github.io" + "/" + "img_" + randomNumber + ".jpg";
-return imgName;
-}
-document.onload = function(){
-document.getElementById('imgcorrect').src= randomImgCorrect();
-	};
-}
-</script>
+	<script>
+	function randomImg() {
+	var randomNumber = Math.floor(Math.random() * 12) + 1;
+	var imgName = "img_" + randomNumber + ".jpg";
+	document.getElementById("imageid").src= "aemaeth0.github.io" + "/" + imgName;
+	}
+	</script>
 
 
 <link rel="stylesheet" href="main.css">
@@ -21,7 +15,7 @@ document.getElementById('imgcorrect').src= randomImgCorrect();
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 <title>Al Pizano | Computer Engineer | Chicago, IL</title>
 </head>
-<body bgcolor = "#1B2631" onload="load()">
+<body bgcolor = "#1B2631">
 
 	<!-- For the header structure element of webpage -->
 <header class = "logo-container">
@@ -42,36 +36,13 @@ document.getElementById('imgcorrect').src= randomImgCorrect();
 <!-- For the about section structure element of webpage -->
 <section>
   <p>Hiya, my name is Al Pizano and I'm a Computer Engineer from Chicago, IL!</p>
-	<img id="imageid" src="imageid.jpg">
-	<img id="imageid" src="imageid.jpg"/>
-	<img id="imagecorrect" src="nothing.jpg"/>
-	<img id="imagecorrect" src="nothing.jpg">
-	Yes
-
-<button type="button" onclick="randomImgX()">Try it</button>
-
-	<img id="test" src="aemaeth0.github.io" + "/" + imgName" />
-<img id="test" src="aemaeth0.github.io" + "/" + imgName">
-<img id="test" width = "100%" height = "100%" src="">
-<img id="test" width = "100%" height = "100%" src=""/>
-
 </section>
 
 <!-- For the aside section structure element of webpage -->
 <aside class>
 	<div class = "side-container">
 	<!-- do not display this yet <img class = "side-img" src= "1.jpg"></p> -->
-	<img id="img_1" src="randomImg()">
-<img id="img_1">
-<img id=img_1>
-<img id=img_2>
-<img id="img_2">
-<img id="test" src="" />
-<img id="img_1" src="">
-<img id=testing src="">
-<img id=testing2 src="">
-<button type="button" onclick="randomImgX()">Try it</button>
-Testing 128th time
+<button type="button" onclick="randomImg()">Try it</button>
 	"I imagine that right now, you're feeling a bit like Alice. Hmm? Tumbling down the rabbit hole?" - Morpheus
 </div>
 </aside>
