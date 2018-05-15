@@ -113,12 +113,12 @@ float: ;
 h1, h3, h4, h5 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: .08rem;
-  color: #ECF0F1;
+  color: #D0D3D4  ;
   margin-bottom: 5px;
 }
 
 p {
-  color: #ECF0F1;
+  color: #D0D3D4  ;
   font: 16px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -127,12 +127,13 @@ h2 {
 }
 
 .links {
+  color: #76D7C4;
 font-size: 14px;
 }
 
 body {
   font-family: "Grandesign", Helvetica Neue, Helvetica, Arial, sans-serif;
-  color: #F7F9F9;
+  color: #D0D3D4  ;
   font-size: 2rem;
 }
 
