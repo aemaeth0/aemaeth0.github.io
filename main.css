@@ -94,8 +94,8 @@ nav {
 
 }
 nav li {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 footer {
@@ -118,7 +118,7 @@ font-size: 10px;
   padding-right: 0px;
   padding-top: 0;
   padding-bottom; 0;
-  width: 976px;
+  width: 966px;
 }
 
 .about {
