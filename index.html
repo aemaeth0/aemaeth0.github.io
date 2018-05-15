@@ -6,9 +6,10 @@
 	{
 	var randomNumber = Math.floor(Math.random() * 12) + 1;
 	var imgName = "img_" + randomNumber + ".jpg";
+	return "aemaeth0.github.io" + "/" + imgName;
 }
 	document.onload = function(){
-	document.getElementById("testing").src= "aemaeth0.github.io" + "/" + imgName;
+	document.getElementById("testing").src= randomImg();
 	}
 }
 </script>
