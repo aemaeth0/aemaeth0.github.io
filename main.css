@@ -66,10 +66,24 @@ section {
 
 aside {
   float: right;
+
 }
 
 nav {
-  display: inline-block;
+  /* inline-block seems to wrap the navbar around the section */
+  display: block;
+  padding-top: 0px;
+  margin: 0px auto;
+  padding-left: 200px;
+
+}
+nav li {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+footer {
+
 }
 
 .container {
@@ -87,8 +101,9 @@ padding-top: 0;
 }
 
 .logo {
-	padding-top: 100px;
+	padding-top: 50px;
   padding-left: 50px;
+  padding-bottom: 0px;
 
 }
 
@@ -130,19 +145,26 @@ h2 {
 
 a {
   color: #76D7C4;
+  font-size: 14px;
 }
 a:hover {
   color: #ffffff;
+  font-size: 16px;
 }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #979A9A  ;
-  font-size: 3rem;
+  color: #CCCCCC  ;
+  /* the rem font-size value has innate padding! */
+  font-size: 16px;
 }
 
 hr {
 border: 0;
 height: 2px;
 background: #f1f1f1;
+}
+
+li {
+  display: inline;
 }
