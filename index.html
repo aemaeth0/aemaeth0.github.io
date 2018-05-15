@@ -14,14 +14,14 @@
 }
 </script>
 <script type="text/javascript">
-function randomImg3()
+function randomImgCorrect()
 {
 var randomNumber = Math.floor(Math.random() * 12) + 1;
 var imgName = "aemaeth0.github.io" + "/" + "img_" + randomNumber + ".jpg";
 return imgName;
 }
 document.onload = function(){
-document.getElementById('img_2').src= randomImg3();
+document.getElementById('imgcorrect').src= randomCorrect();
 	};
 }
 </script>
@@ -40,7 +40,7 @@ document.getElementById('test').src= "aemaeth0.github.io" + "/" + imgName;
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 <title>Al Pizano | Computer Engineer | Chicago, IL</title>
 </head>
-<body bgcolor = "#1B2631">
+<body bgcolor = "#1B2631" onload="load()">
 
 	<!-- For the header structure element of webpage -->
 <header class = "logo-container">
@@ -63,6 +63,7 @@ document.getElementById('test').src= "aemaeth0.github.io" + "/" + imgName;
   <p>Hiya, my name is Al Pizano and I'm a Computer Engineer from Chicago, IL!</p>
 	<img id="imageid" src="imageid.jpg">
 	<img id="imageid" src="imageid.jpg"/>
+	<img id="imagecorrect" src="nothing.jpg"/>
 	Yes
 <script>
 	function randomImgX(){
@@ -106,7 +107,7 @@ document.getElementById('test').src= "aemaeth0.github.io" + "/" + imgName;
 <img id=testing src="">
 <img id=testing2 src="">
 <button type="button" onclick="randomImgX()">Try it</button>
-Testing 125th time
+Testing 126th time
 	"I imagine that right now, you're feeling a bit like Alice. Hmm? Tumbling down the rabbit hole?" - Morpheus
 </div>
 </aside>
