@@ -67,6 +67,13 @@ section {
   padding-top: 20px;
 }
 
+section div {
+  position: fixed;
+  height: 15px;
+  width: 15px;
+  background-color: red;
+}
+
 /* this will float right */
 aside {
 
