@@ -84,7 +84,8 @@ nav {
   display: block;
   margin-left: 10px;
   margin-top: -30px;
-  margin-bottom: 9px;
+  /* this pushes the nav container down to give room for frame container */
+  margin-bottom: 11px;
   padding-top: 0px;
   padding-left: 0px;
   /*text-align: center;*/
