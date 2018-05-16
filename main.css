@@ -74,7 +74,7 @@ aside {
   width: 30%;
 }
 
-.side-img {
+.aside-img {
   max-width: 80%;
 }
 
@@ -120,13 +120,13 @@ margin: 200px 200px;
   padding-bottom; 0;
   width: 966px;
 }
-.frame {
+.frame-container {
   background-color: #263238;
   border: 1px solid #424242;
   margin: 2px;
 }
 
-.news {
+.news-container {
   background-color: #020A13;
   border: 1px solid #424242;
   margin-left: 20px;
@@ -134,9 +134,9 @@ margin: 200px 200px;
   width: 63%;
 }
 
-.side-container {
-  width: 250px;
-  margin: 100px 100px;
+.aside-container {
+  width: 225px;
+  margin: 100px 50px;
   padding-top: 0px;
   font-size: 12px;
   font-style: italic;
