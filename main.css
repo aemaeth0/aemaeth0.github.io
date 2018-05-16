@@ -64,7 +64,7 @@ section {
   float: left;
   margin: 0 1.5%;
   width: 63%;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 /* this will float right */
@@ -75,7 +75,7 @@ aside {
 }
 
 .aside-img {
-  max-width: 80%;
+  max-width: 90%;
 }
 
 nav {
@@ -126,7 +126,7 @@ margin: 0px 0px;
   background-color: #020A13;
   border: 1px solid #424242;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 25px;
   width: 63%;
 }
 
@@ -134,9 +134,11 @@ margin: 0px 0px;
   background-color: #020A13;
   border: 1px solid #424242;
   width: 200px;
-  margin: 100px 30px;
+  margin-left: 50px;
+  margin-top: 150px;
+  margin-bottom: 10px;
   padding-top: 10px;
-  padding-left: 10px;
+  padding-left: 15px;
   padding-bottom: 10px;
   font-size: 12px;
   font-style: italic;
@@ -186,18 +188,19 @@ float: ;
 h1, h3, h4, h5 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: .08rem;
-  color:  #5e5e5e  ;
-  margin-bottom: 5px;
+  color:   #5e5e5e  ;
+  margin-bottom: 10px;
   font-size: 22px;
   text-transform: uppercase;
   margin-left: 10px;
+  margin-top: 0px;
 }
 
 p {
-  color: #5e5e5e  ;
+  color: #898989 ;
   font: 16px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 100px;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-left: 10px;
 }
 
