@@ -98,15 +98,11 @@ nav li {
 }
 
 footer {
+  margin: 2px auto;
+  text-align: center;
 clear: both;
 font-size: 12px;
-margin: 200px 200px;
-}
-
-.footer-container {
-  margin: 0px 0px;
-  width: 63%;
-  padding-left: 475px;
+margin: 0px 0px;
 }
 
 /* default container dimensions I was initially using */
@@ -135,11 +131,21 @@ margin: 200px 200px;
 }
 
 .aside-container {
-  width: 225px;
-  margin: 100px 50px;
-  padding-top: 0px;
+  background-color: #020A13;
+  border: 1px solid #424242;
+  width: 200px;
+  margin: 100px 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
   font-size: 12px;
   font-style: italic;
+}
+
+.footer-container {
+  margin: 2px;
+  background-color: #020A13;
+  border: 1px solid #424242;
 }
 
 .about {
@@ -180,7 +186,7 @@ float: ;
 h1, h3, h4, h5 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: .08rem;
-  color: ##5e5e5e  ;
+  color:  #5e5e5e  ;
   margin-bottom: 5px;
   font-size: 22px;
   text-transform: uppercase;
@@ -188,7 +194,7 @@ h1, h3, h4, h5 {
 }
 
 p {
-  color: ##5e5e5e  ;
+  color: #5e5e5e  ;
   font: 16px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 100px;
   margin-top: 10px;
