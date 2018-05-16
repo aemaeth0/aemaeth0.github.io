@@ -1,3 +1,4 @@
+
 var quotes = [
   "All give life to the warrior.",
   "Ours is the paradise of Terra.",
