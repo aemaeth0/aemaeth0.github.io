@@ -69,9 +69,16 @@ section {
 
 section div {
   position: fixed;
-  height: 15px;
-  width: 15px;
-  background-color: red;
+top: ;
+left: ;
+  height: 16px;
+  width: 16px;
+  background-color: ;
+
+}
+
+div.image {
+  content:url(http://aemaeth0.github.io/fast-forward.png);
 }
 
 /* this will float right */
@@ -216,7 +223,7 @@ h1, h3, h4, h5 {
   margin-bottom: 10px;
   font-size: 20px;
   text-transform: uppercase;
-  margin-left: 0px;
+  margin-left: 15px;
   margin-top: 0px;
 }
 
