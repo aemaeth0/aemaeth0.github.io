@@ -79,6 +79,7 @@ section div {
 
 div.image {
   content:url(http://aemaeth0.github.io/fast-forward.png);
+  max-width: ;
 }
 
 /* this will float right */
