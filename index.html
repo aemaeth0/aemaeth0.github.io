@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 <title>Al Pizano | Computer Engineer | Chicago, IL</title>
 </head>
-<body bgcolor = "#546E7A" onload="script()">
+<body bgcolor = "#546E7A">
 	<!-- this main container will hold the main structure of website -->
 <div class = "container">
 	<!-- For the header structure element of webpage -->
@@ -43,6 +43,9 @@ Thanks for checking out my website once again!</p>
 	var randomNumber = Math.floor(Math.random() * 12) + 1;
 	var imgName = "img_" + randomNumber + ".jpg";
 	document.getElementById("imageid").src= imgName;
+	window.onload = function() {
+  randomImg("imageid");
+
 	}
 	</script>
 	<img id="imageid" class = "side-img" src="">
