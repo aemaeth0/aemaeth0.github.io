@@ -43,7 +43,6 @@
 	<br>
 	<p id="quote1">
 	<script>
-	function randomQuote(){
 	var quotes = [
 		"All give life to the warrior.",
 		"Ours is the paradise of Terra.",
@@ -51,8 +50,8 @@
 		"Who dares wins."
 		];
 	var randomQuote = quotes[Math.floor(Math.random() * 4) + 1];
-	document.getElementById("quote1").innerHTML = randomQuote.text;
-}
+	document.write(randomQuote);
+	/*document.getElementById("quote1").innerHTML = randomQuote.text;*/
 </script>
 </div>
 </aside>
