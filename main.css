@@ -69,6 +69,7 @@ section {
 
 /* this will float right */
 aside {
+  
   float: right;
   margin: 0 1.5%;
   width: 30%;
@@ -81,20 +82,25 @@ aside {
 nav {
   /* inline-block seems to wrap the navbar around the section */
   display: block;
+  margin-left: 10px;
   margin-top: -30px;
   margin-bottom: 9px;
   padding-top: 0px;
   padding-left: 0px;
-  text-align: center;
+  /*text-align: center;*/
 
 }
-nav ul {
+ul {
   margin: 2px auto;
 }
 
-nav li {
+ul li {
   padding-right: 15px;
   padding-left: 15px;
+}
+
+ul li a{
+
 }
 
 footer {
@@ -131,15 +137,16 @@ margin: 0px 0px;
 }
 
 .aside-container {
+
   background-color: #020A13;
   border: 1px solid #424242;
   width: 200px;
   margin-left: 50px;
   margin-top: 150px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   padding-top: 10px;
   padding-left: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   font-size: 12px;
   font-style: italic;
 }
