@@ -140,6 +140,8 @@ border: 1px solid #424242;
   /* this moves footer away from news container */
   margin-bottom: 50px;
   padding-bottom: 10px;
+  /*gives left padding to all the text inside the news container */
+  padding-left: 15px;
   width: 63%;
 }
 
@@ -206,27 +208,31 @@ h1, h3, h4, h5 {
   margin-bottom: 10px;
   font-size: 20px;
   text-transform: uppercase;
-  margin-left: 10px;
+  margin-left: 0px;
   margin-top: 0px;
 }
 
 p {
   color: #898989 ;
-  font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
   margin-bottom: 10px;
   margin-top: 5px;
-  margin-left: 10px;
+  margin-left: 0px;
 }
 
 h2 {
 	font-size: 18px;
+  margin-left: 0px;
+  margin-bottom: 15px;
 }
 
 
 a {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: ;
-  color: #CCCCCC;
+  color: #AED6F1;
+
   /*color: #76D7C4; */
   font-size: 14px;
   text-transform: ;
@@ -234,9 +240,9 @@ a {
    /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
 }
 a:hover {
-  color: #AED6F1;
+  color: #CCCCCC;
   font-size: 14px;
-  text-transform: uppercase;
+  text-transform: ;
 }
 
 /*
@@ -247,9 +253,10 @@ a:visited {
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #CCCCCC  ;
+  color: #CCCCCC ;
   /* the rem font-size value has innate padding! */
-  font-size: 16px;
+  font-size: 14px;
+
 }
 
 hr {
