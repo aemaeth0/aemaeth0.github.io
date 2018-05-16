@@ -100,7 +100,8 @@ ul li {
 }
 
 ul li a{
-
+  color: #0C0D0D;
+    text-transform: uppercase;
 }
 
 footer {
@@ -222,10 +223,10 @@ h2 {
 a {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: ;
-  color: #0C0D0D;
+  color: #CCCCCC;
   /*color: #76D7C4; */
   font-size: 14px;
-  text-transform: uppercase;
+  text-transform: ;
   text-decoration: none;
    /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
 }

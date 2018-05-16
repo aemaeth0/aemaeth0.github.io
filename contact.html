@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<script src="randomImg.js"></script>
+<link rel="stylesheet" href="main.css">
+<meta charset="8-uf">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<title>Al Pizano | Computer Engineer | Chicago, IL</title>
+</head>
+<body bgcolor = "#546E7A">
+	<!-- this main container will hold the main structure of website -->
+<div id = "container">
+	<!-- For the header structure element of webpage -->
+<header class = "banner-container">
+	<img class = "banner" src="banner_edit.png">
+</header>
+
+<!-- For the links navigation structure element of webpage -->
+<nav class = "nav li">
+<ul>
+	<li><a href="index.html">Home</a></li>|
+  <li><a href="resume.html">Resumé</a></li>|
+  <li><a href="blog.html">Blog</a></li>|
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<!-- For the about section structure element of webpage -->
+<div class = "frame-container">
+	<section class = "news-container">
+		<h1>Contact</h1>
+  	<p>E-mail: <a href="mailto:apizano@pnw.edu">apizano@pnw.edu</a><br>
+    LinkedIn: <a href="http://linkedin.com/in/alpizano">LinkedIn</a></p>
+</section>
+
+<!-- For the aside section structure element of webpage -->
+<aside>
+	<div class = "aside-container">
+	<!-- do not display this yet <img class = "side-img" src= "1.jpg"></p> -->
+	<img id="img1" class="aside-img" src="">
+	<br>
+	<div id="quote1">
+		<script>
+		var quotes = [
+		  "All give life to the warrior.",
+		  "Ours is the paradise of Terra.",
+		  "Let them be ash beneath our feet.",
+		  "Who dares wins.",
+		  "Ours is the redemption of the Universe.",
+		  "To improve is to change; to be perfect is to change often.",
+		  "We will crush the Inner Sphere until they are but smoke and dreams.",
+		  "I do not see why man should not be just as cruel as nature.",
+		  "Ours is the war of liberation.",
+		  "Strength lies not in defense but in attack."
+		  ];
+		var randomQuote = quotes[Math.floor(Math.random() * 9) + 1];
+		/*document.write(randomQuote);*/
+		/*document.getElementById('quote1').innerHTML = '<p>' + randomQuote + '</p>';*/
+		  document.getElementById('quote1').innerHTML = randomQuote;
+</script>
+</div>
+</aside>
+
+
+<!-- For the footer section structure element of webpage -->
+<footer>
+  &copy; Al Pizano<br>
+	<audio controls autoplay>
+	  <source src="Occlusion.ogg" type="audio/ogg">
+	  <source src="Occlusion.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+			</audio>
+		</footer>
+</div>
+</div>
+</body>
