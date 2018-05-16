@@ -38,17 +38,18 @@ Thanks for checking out my website once again!</p>
 <aside class>
 	<div class = "side-container">
 	<!-- do not display this yet <img class = "side-img" src= "1.jpg"></p> -->
+	<img id="img1" src="">
 	<script>
 	function randomImg(id) {
 	var randomNumber = Math.floor(Math.random() * 12) + 1;
 	var imgName = "img_" + randomNumber + ".jpg";
-	document.getElementById("imageid").src= imgName;
+	document.getElementById(id).src= imgName;
 }
 	window.onload = function() {
-  randomImg(id);
+  randomImg(img1);
 	}
 	</script>
-	<img id="imageid" class = "side-img" src="">
+	<img id="img1" class = "side-img" src="">
 	"I imagine that right now, you're feeling a bit like Alice. Hmm? Tumbling down the rabbit hole?" - Morpheus
 </div>
 </aside>
