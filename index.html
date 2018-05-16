@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
+	<script src="randomImg.js"></script>
 <link rel="stylesheet" href="main.css">
 <meta charset="8-uf">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
@@ -39,16 +40,6 @@
 	<div class = "aside-container">
 	<!-- do not display this yet <img class = "side-img" src= "1.jpg"></p> -->
 	<img id="img1" class="aside-img" src="">
-	<script>
-	function randomImg(id) {
-	var randomNumber = Math.floor(Math.random() * 12) + 1;
-	var imgName = "img_" + randomNumber + ".jpg";
-	document.getElementById(id).src= imgName;
-	}
-	window.onload = function() {
-  randomImg("img1");
-	}
-	</script>
 	<br>
 	"Deep into that darkness peering, long I stood there, wondering, fearing, doubting, dreaming dreams no mortal ever dared to dream before."
 </div>
