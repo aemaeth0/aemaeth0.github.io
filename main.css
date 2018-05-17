@@ -149,7 +149,7 @@ border: 1px solid #424242;
 }
 
 .accordion:after {
-    content: url(http://aemaeth0.github.io/close.png); /* Unicode character for "plus" sign (+) */
+    content: url(http://aemaeth0.github.io/close2.png); /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: #777;
     float: right;
@@ -157,7 +157,7 @@ border: 1px solid #424242;
 }
 
 .active:after {
-    content: url(http://aemaeth0.github.io/open.png); /* Unicode character for "minus" sign (-) */
+    content: url(http://aemaeth0.github.io/open2.png); /* Unicode character for "minus" sign (-) */
 }
 
 /*
