@@ -8,15 +8,16 @@
 <title>Al Pizano | Computer Engineer | Chicago, IL</title>
 </head>
 <body bgcolor = "#546E7A">
+
 	<!-- this main container will hold the main structure of website -->
-<div id = "container">
+		<div id = "main-container">
 	<!-- For the header structure element of webpage -->
 <header class = "banner-container">
 	<img class = "banner" src="banner_edit.png">
 </header>
 
 <!-- For the links navigation structure element of webpage -->
-<nav class = "nav li">
+<nav>
 <ul>
 	<li><a href="index.html">Home</a></li>|
   <li><a href="resume.html">Resumé</a></li>|
@@ -26,14 +27,51 @@
 </nav>
 
 <!-- For the about section structure element of webpage -->
-<div class = "frame-container">
-	<section class = "news-container">
-		<div class= "image" onclick="toggleNews()"></div>
+<div class = "content-container">
+
+
+	<section class = "left">
+
+
+		<button class="accordion">News 1</button>
+		<div class="panel">
+		Lorem ipsum...
+		</div>
+
+		<button class="accordion">News 2</button>
+		<div class="panel">
+		Lorem ipsum...
+		</div>
+
+		<button class="accordion">News 3</button>
+		<div class="panel">
+		Lorem ipsum...
+		</div>
+
 		<script>
-		function toggleNews(){
-			alert("It works!");
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++)
+		{
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.maxHeight)
+				{
+					panel.style.maxHeight = null;
+				}
+				else
+				{
+					panel.style.maxHeight = panel.scrollHeight + "px";
+				}
+			});
 		}
 		</script>
+
+
+
+		<div class = "news">
 		<h1>Welcome</h1>
   	<p>Heya, my name is Al Pizano and I'm a Computer Engineer from the greater Chicago area! I'll be graduating from Purdue University with a BS of Computer Engineering in 2019 and would like to present
 			my portfolio, resume, contact and other information on this website! I really enjoy programming in every aspect (from Java to C++) to front-end and back-end, and
@@ -41,15 +79,17 @@
 			Majoring in Computer Engineering also made me well-versed in the electrical/hardware aspects of engineering aswell, so I much enjoy circuit analysis and programming on FPGAs using Altera Quartus!
 			Thanks for checking out my website once again!</p>
 			<p>This website is of course being coded in HTML and CSS from scratch, and I will be programming dynamic features with JavaScript and blog/news posting system using PHP and MySQL</p>
+</div>
+
 </section>
 
 <!-- For the aside section structure element of webpage -->
 <aside>
-	<div class = "aside-container">
+	<div class = "aside-random">
 	<!-- do not display this yet <img class = "side-img" src= "1.jpg"></p> -->
 	<img id="img1" class="aside-img" src="">
 	<br>
-	<div id="quote1">
+	<div id="quote1"></div>
 		<!-- JavaScript needs to be called here; does not work in <head> -->
 		<script src="randomQuote.js"></script>
 </div>

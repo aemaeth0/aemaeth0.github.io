@@ -59,41 +59,21 @@ table {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-/* this will float left */
-section {
-  float: left;
-  margin: 0 1.5%;
-  width: 63%;
-  padding-top: 20px;
-}
-
-section div {
-  position: fixed;
-    top: ;
-    left: ;
-  height: ;
-  width: ;
-  background-color: ;
-
-}
 
 div.image {
   content:url(http://aemaeth0.github.io/fast-forward.png);
   max-width: ;
 }
 
-/* this will float right */
-aside {
-
-  float: right;
-  margin: 0 1.5%;
-  width: 30%;
-}
-
 .aside-img {
   max-width: 90%;
 }
 
+/*
+  ========================================
+  Menu/Navigation
+  ========================================
+*/
 nav {
   /* inline-block seems to wrap the navbar around the section */
   display: block;
@@ -130,8 +110,64 @@ margin: 0px 0px;
 border: 1px solid #424242;
 }
 
+/*
+  ========================================
+  Accordion
+  ========================================
+*/
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #263238;
+    font-size: 18px;
+    color: #0C0D0D;
+    text-transform: uppercase;
+    /* gives room under each accordion button */
+    margin-bottom: 2px;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    border: 1px solid #424242;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #898989;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: #020A13;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: url(http://aemaeth0.github.io/close.png); /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: url(http://aemaeth0.github.io/open.png); /* Unicode character for "minus" sign (-) */
+}
+
+/*
+  ========================================
+  Containers
+  ========================================
+*/
+
 /* default container dimensions I was initially using */
-#container {
+#main-container {
   background-color: #020A13;
   /*background-color: #1B2631;*/
   /* auto automatically centers the container; 0px is for top/bottom margins */
@@ -142,15 +178,22 @@ border: 1px solid #424242;
   padding-bottom; 0;
   width: 966px;
 }
-.frame-container {
+.content-container {
   background-color: #263238;
   border: 1px solid #424242;
   margin: 2px;
 }
 
-.news-container {
-  background-color: #020A13;
-  border: 1px solid #424242;
+/* this will float left */
+section {
+  float: left;
+  margin: 0 1.5%;
+  width: 63%;
+  padding-top: 20px;
+}
+
+
+section .left {
   margin-left: 20px;
   margin-top: 25px;
   /* this moves footer away from news container */
@@ -159,10 +202,26 @@ border: 1px solid #424242;
   /*gives left padding to all the text inside the news container */
   padding-left: 15px;
   width: 63%;
+
 }
 
-.aside-container {
+/* can't be section .news div for some reason */
+.news {
+  margin-top: 20px;
+  padding: 10px 5px;
+  background-color: #020A13;
+  /* background-color: #020A13; */
+  border: 1px solid #424242;
+}
 
+/* this will float right */
+aside {
+  float: right;
+  margin: 0 1.5%;
+  width: 30%;
+}
+
+.aside-random {
   background-color: #020A13;
   border: 1px solid #424242;
   width: 200px;
@@ -171,7 +230,7 @@ border: 1px solid #424242;
   margin-bottom: 10px;
   padding-top: 10px;
   padding-left: 15px;
-  padding-bottom: 0px;
+  padding-bottom: 5px;
   font-size: 12px;
   font-style: italic;
 }
@@ -220,7 +279,7 @@ float: ;
 h1, h3, h4, h5 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: .08rem;
-  color:   #5e5e5e  ;
+  color:   #5e5e5e;
   margin-bottom: 10px;
   font-size: 20px;
   text-transform: uppercase;
@@ -269,7 +328,7 @@ a:visited {
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #CCCCCC ;
+  color: #898989 ;
   /* the rem font-size value has innate padding! */
   font-size: 14px;
 
