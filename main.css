@@ -125,7 +125,7 @@ border: 1px solid #424242;
     /* gives room under each accordion button */
     margin-bottom: 2px;
     cursor: pointer;
-    padding: 10px;
+    padding: 8px;
     width: 100%;
     text-align: left;
     border: none;
@@ -207,7 +207,7 @@ section .left {
 
 /* can't be section .news div for some reason */
 .news {
-  margin-top: 20px;
+  margin: 20px 0;
   padding: 10px 5px;
   background-color: #020A13;
   /* background-color: #020A13; */
