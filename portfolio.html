@@ -8,15 +8,16 @@
 <title>Al Pizano | Computer Engineer | Chicago, IL</title>
 </head>
 <body bgcolor = "#546E7A">
+
 	<!-- this main container will hold the main structure of website -->
-<div id = "container">
+		<div id = "main-container">
 	<!-- For the header structure element of webpage -->
 <header class = "banner-container">
 	<img class = "banner" src="banner_edit.png">
 </header>
 
 <!-- For the links navigation structure element of webpage -->
-<nav class = "nav li">
+<nav>
 <ul>
 	<li><a href="index.html">Home</a></li>|
   <li><a href="resume.html">Resumé</a></li>|
@@ -26,9 +27,13 @@
 </nav>
 
 <!-- For the about section structure element of webpage -->
-<div class = "frame-container">
-	<section class = "news-container">
-		<h1>Portfolio</h1>
+<div class = "content-container">
+
+
+	<section class = "left">
+
+		<div class = "news">
+			<h1>Portfolio</h1>
   	<h2>Backend:</h2>
     <p>Here are links to my github repositories that contain my labs, assignments, and projects from various
     programming classes at Purdue University, from MATLAB to Java. They range to simple programming assignments to building apps with multiple classes and implementing GUI interfaces.
@@ -39,29 +44,35 @@
 		CS275 (Data Structures) <font color="brown">[Java]</font>: <a href="https://github.com/aemaeth0/CS275">CS275 GitHub Repository</a><br>
 		ECE270 (Intro to Digital System Design) <font color="blue">[VHDL]</font>: <a href="https://github.com/aemaeth0/ECE270">ECE270 GitHub Repository</a><br>
   </p>
+</div>
+
 </section>
 
 <!-- For the aside section structure element of webpage -->
 <aside>
-	<div class = "aside-container">
+	<div class = "aside-random">
 	<!-- do not display this yet <img class = "side-img" src= "1.jpg"></p> -->
 	<img id="img1" class="aside-img" src="">
 	<br>
 	<div id="quote1"></div>
+		<!-- JavaScript needs to be called here; does not work in <head> -->
 		<script src="randomQuote.js"></script>
 </div>
 </aside>
+
 
 
 <!-- For the footer section structure element of webpage -->
 <footer>
   Copyright 2018 &copy; Al Pizano<br>
 	<audio controls autoplay>
-	  <source src="Departure.ogg" type="audio/ogg">
-	  <source src="Departure.mp3" type="audio/mpeg">
+	  <source src="Occlusion.ogg" type="audio/ogg">
+	  <source src="Occlusion.mp3" type="audio/mpeg">
 	  Your browser does not support the audio element.
 			</audio>
 		</footer>
-</div>
-</div>
+	</div>
+
+	</div>
+
 </body>
