@@ -21,16 +21,12 @@
   canv = document.getElementById("gc");
   // Graphic Buffer
   ctx = canv.getContext("2d");
-  ctx.font = 'italic 18px Arial';
-   ctx.textAlign = 'center';
-   ctx. textBaseline = 'middle';
-   ctx.fillStyle = 'red';  // a color name or by using rgb/rgba/hex values
-   ctx.fillText('Hello World!', 20, 20); // text and position
   // Keyboard hooks
   document.addEventListener("keydown",keyPush);
   // Call game function 15 times every second (1000ms)
   setInterval(game,1000/15);
   }
+
 
   // player positions (x,y)
   px=py=10;
@@ -87,6 +83,13 @@
       ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2);
     }
 
+function drawScore() {
+  ctx.font = 'italic 18px Arial';
+   ctx.textAlign = 'center';
+   ctx. textBaseline = 'middle';
+   ctx.fillStyle = 'red';  // a color name or by using rgb/rgba/hex values
+   ctx.fillText("Score: " + score, 15, 15); // text and position
+}
   function keyPush(evt) {
   switch(evt.keyCode) {
         case 37:
