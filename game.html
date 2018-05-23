@@ -25,6 +25,7 @@
   document.addEventListener("keydown",keyPush);
   // Call game function 15 times every second (1000ms)
   setInterval(game,1000/15);
+  setInterval(drawScore, 1000/15);
   }
 
 
@@ -37,6 +38,7 @@
   // trail array
   trail = [];
   tail = 5;
+  var score = 0;
 
 // Begin function game()
     function game() {
@@ -46,13 +48,13 @@
       if(px < 0) {
         px = tc-1;
         }
-      if(px > tc-1){
+      if(px > tc-1) {
         px = 0;
         }
       if(py < 0) {
         py = tc -1;
         }
-      if(py > tc-1){
+      if(py > tc-1) {
         py = 0;
         }
         // Background canvas color
@@ -75,20 +77,22 @@
       // If eat on token
       if(ax==px && ay==py) {
         tail++;
+        score++;
         ax = Math.floor(Math.random()*tc);
         ay = Math.floor(Math.random()*tc);
       }
 
       ctx.fillStyle ="#6D1237";
       ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2);
-    }
+    } // close function game() bracket
 
+// DrawScore function to display score
 function drawScore() {
-  ctx.font = 'italic 18px Arial';
+  ctx.font = 'bold 15px Arial';
    ctx.textAlign = 'center';
    ctx. textBaseline = 'middle';
-   ctx.fillStyle = 'red';  // a color name or by using rgb/rgba/hex values
-   ctx.fillText("Score: " + score, 15, 15); // text and position
+   ctx.fillStyle = '#49001D';  // a color name or by using rgb/rgba/hex values
+   ctx.fillText("SCORE: " + score, 40, 15); // text and position
 }
   function keyPush(evt) {
   switch(evt.keyCode) {
