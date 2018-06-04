@@ -5,12 +5,12 @@
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 
-<link rel="stylesheet" type="text/css" href="js_calc.css">
+<link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
 
 <body>
-  ONLY SINGLE DIGIT COMPUTATIONS ATM! <br>
+   <br>
   <div id="grid">
   <div class="calculator">
     <div class="title">Calculator</div>
@@ -21,30 +21,38 @@
   <div class="button here2">&#10003;</div>
   <div class="button here3">x<sup>2</sup></div>
   <div class="button here4">1/x</div>
-
   <div class="button ce">ce</div>
-  <div id="clr" onclick="clr()" class="button clr">C</div>
-  <div id="del" onclick="del()" class="button del">&#9003;</div>
 
-  <div class="button plus-minus">&#177;</div>
-  <div class="button decimal">.</div>
-  <div id="num0" onclick="disp0()" class="button num0">0</div>
-  <div id="num1" onclick="disp1()" class="button num1">1</div>
-  <div id="num2" onclick="disp2()" class="button num2">2</div>
-  <div id="num3" onclick="disp3()" class="button num3">3</div>
-  <div id="num4" onclick="disp4()" class="button num4">4</div>
-  <div id="num5" onclick="disp5()" class="button num5">5</div>
-  <div id="num6" onclick="disp6()" class="button num6">6</div>
-  <div id="num7" onclick="disp7()" class="button num7">7</div>
-  <div id="num8" onclick="disp8()" class="button num8">8</div>
-  <div id="num9" onclick="disp9()" class="button num9">9</div>
-  <div id="eqs" onclick="eval()" class="button eqs">=</div>
+  <!--<div id="clr" onclick="clicks(this.id)" class="button clr">C</div>-->
+  <div id="del" onclick="clicks(this.id)" class="button del">&#9003;</div>
+
+  <div id="plus-minus" onclick="clicks(this.id)" class="button plus-minus">&#177;</div>
+  <div id="decimal" onclick="clicks(this.id)" class="button decimal">.</div>
+
+  <div id="num0" onclick="clicks(this.id)" class="button num0">0</div>
+  <div id="num1" onclick="clicks(this.id)" class="button num1">1</div>
+  <div id="num2" onclick="clicks(this.id)" class="button num2">2</div>
+  <div id="num3" onclick="clicks(this.id)" class="button num3">3</div>
+  <div id="num4" onclick="clicks(this.id)" class="button num4">4</div>
+  <div id="num5" onclick="clicks(this.id)" class="button num5">5</div>
+  <div id="num6" onclick="clicks(this.id)" class="button num6">6</div>
+  <div id="num7" onclick="clicks(this.id)" class="button num7">7</div>
+  <div id="num8" onclick="clicks(this.id)" class="button num8">8</div>
+  <div id="num9" onclick="clicks(this.id)" class="button num9">9</div>
+
+  <div id="clr" onclick="clicks(this.id)" class="button clr">C</div>
+  <div id="del" onclick="clicks(this.id)" class="button del">&#9003;</div>
 
 
-  <div id="div" onclick="div()" class="button div">/</div>
-  <div id="mul" onclick="mul()" class="button mul">*</div>
-  <div id="sub" onclick="sub()" class="button sub">-</div>
-  <div id="add" onclick="add()"class="button add">+</div>
+  <div id="div" onclick="clicks(this.id)" class="button div">/</div>
+  <div id="mul" onclick="clicks(this.id)" class="button mul">*</div>
+  <div id="sub" onclick="clicks(this.id)" class="button sub">-</div>
+  <div id="add" onclick="clicks(this.id)"class="button add">+</div>
+
+  <div id="eqs" onclick="clicks(this.id)" class="button eqs">=</div>
+
+
+
 
 
 
@@ -53,11 +61,8 @@
 
   </div>
   </div>
-  The test output answer is: <br>
-  <p id="array-test"></p>
 
-  <script src="array-test.js"></script>
-  <script src="test.js"></script>
+  <script src="calc_logic.js"></script>
 
 </body>
 </html>
