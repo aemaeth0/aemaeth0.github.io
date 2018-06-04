@@ -1,0 +1,328 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+p {
+	color: #000;
+}
+
+body {
+	font-family: Arial;
+	line-height: 40px;
+	text-align: center;
+	color: #000;
+	font-weight: bold;
+}
+
+#grid {
+margin-top: 150px;
+display: grid;
+grid-template-rows: 505px;
+grid-template-columns: 1fr 325px 1fr;
+grid-template-areas:
+". calc .";
+}
+
+
+.calculator {
+	border-radius: 2.5px;
+	position: relative;
+	grid-area: calc;
+	background: #e6e6e6;
+	border: 1px solid blue;
+	font-size: 15px;
+}
+
+.title {
+	top: -5px;
+	left: 10px;
+	position: absolute;
+	font-family: Arial;
+	font-size: 14px;
+	color: #000;
+	font-weight: 300;
+}
+
+/* numeric output of calculation results */
+#output {
+	text-align: right;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	position: absolute;
+	top: 110px;
+	right: 0;
+	left: 0;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #e6e6e6;
+	width: 300px;
+	height: 50px;
+}
+
+#mini-grid {
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+	right: 5px;
+	margin-top: 100px;
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: 74px 74px 74px 74px;
+	grid-template-rows: 45px 45px 45px 45px 45px 45px;
+	grid-template-areas:
+	"here1 here2 here3 here4"
+	"ce clr del div"
+	"num7 num8 num9 mul"
+	"num4 num5 num6 sub"
+	"num1 num2 num3 add"
+	"plus-minus num0 decimal eqs";
+}
+
+.button {
+	color: #000;
+  font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.button:hover {
+	background-color: #b2b2b2;
+	transition: 0.2s;
+	border: 2px solid #898989;
+}
+
+.here1 {
+	grid-area: here1;
+	font-size: 20px;
+	font-weight: 300;
+	text-transform: uppercase;
+	background-color: #f0f0f0;
+	cursor: pointer;
+}
+.here2 {
+	grid-area: here2;
+	font-size: 20px;
+	font-weight: 300;
+	text-transform: uppercase;
+	background-color: #f0f0f0;
+	cursor: pointer;
+}
+.here3 {
+	grid-area: here3;
+	font-size: 15px;
+	font-weight: 300;
+	font-style: italic;
+	background-color: #f0f0f0;
+	cursor: pointer;
+}
+.here4 {
+	grid-area: here4;
+	font-size: 15px;
+	font-weight: 300;
+	font-style: italic;
+	background-color: #f0f0f0;
+	cursor: pointer;
+}
+
+.num0 {
+
+	grid-area: num0;
+	background-color: #fafafa;
+	cursor: pointer;
+}
+.num1 {
+
+	grid-area: num1;
+	background-color: #fafafa;
+	cursor: pointer;
+}
+.num2 {
+
+	grid-area: num2;
+	background-color: #fafafa;
+	cursor: pointer;
+}
+
+.num3 {
+
+	grid-area: num3;
+	background-color: #fafafa;
+	cursor: pointer;
+}
+
+.num4 {
+
+	grid-area: num4;
+	background-color: #fafafa;
+	cursor: pointer;
+}
+.num5 {
+
+	grid-area: num5;
+	background-color: #fafafa;
+	cursor: pointer;
+}
+.num6 {
+
+	grid-area: num6;
+	background-color: #fafafa;
+	cursor: pointer;
+}
+
+.num7 {
+
+	grid-area: num7;
+	background-color: #fafafa;
+	cursor: pointer;
+}
+
+.num8 {
+
+	grid-area: num8;
+	background-color: #fafafa;
+	cursor: pointer;
+}
+
+.num9 {
+	grid-area: num9;
+	background-color: #fafafa;
+	cursor: pointer;
+}
+
+.plus-minus {
+	font-weight: 300;
+	grid-area: plus-minus;
+	background-color: #f0f0f0;
+	cursor: pointer;
+}
+
+.decimal {
+	font-weight: 500;
+	grid-area: decimal;
+	background-color: #f0f0f0;
+	cursor: pointer;
+}
+
+
+.ce {
+	grid-area: ce;
+	font-size: 15px;
+	font-weight: 300;
+	text-transform: uppercase;
+	background-color: #f0f0f0;
+}
+
+.clr {
+	font-size: 15px;
+	grid-area: clr;
+	font-weight: 300;
+	text-transform: uppercase;
+	background-color: #f0f0f0;
+	cursor: pointer;
+}
+
+.del {
+	font-size: 15px;
+	font-weight: 300;
+	text-transform: uppercase;
+	grid-area: del;
+	background-color: #f0f0f0;
+	cursor: pointer;
+}
+
+.div{
+	font-size: 25px;
+	font-weight: 200;
+	grid-area: div;
+	background-color: #f0f0f0;
+	cursor: pointer;
+}
+
+.add {
+	font-size: 30px;
+	font-weight: 200;
+	grid-area: add;
+	background-color: #f0f0f0;
+	cursor: pointer;
+}
+
+.sub {
+	font-size: 60px;
+	font-weight: 100;
+	grid-area: sub;
+	background-color: #f0f0f0;
+	cursor: pointer;
+}
+
+.mul {
+	font-size: 30px;
+	font-weight: 200;
+	grid-area: mul;
+	background-color: #f0f0f0;
+cursor: pointer;
+}
+
+.eqs {
+	font-size: 30px;
+	font-weight: 200;
+	grid-area: eqs;
+	background-color: #f0f0f0;
+	cursor: pointer;
+}
+
+#test {
+	color: #000;
+}
+.label {
+	color: #000;
+}
+#array-test {
+	color: #000;
+}
