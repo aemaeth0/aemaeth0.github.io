@@ -2,30 +2,69 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+  <style>
+
+  #container {
+    margin: 200px auto;
+    max-width: 1000px;
+  }
+
+
+  #score-text {
+    display: inline-block;
+  }
+
+h1 {
+  display: block;
+
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: #171717;
+}
+  .text {
+    display: block;
+
+  }
+
+  #gc {
+    display:block;
+    margin: 0 auto;
+  }
+
+  .color {
+    color: red;
+  }
+  </style>
+
   <meta charset = "UTF-8">
-  <title>SnakeGame by Al Pizano</title>
+  <title>The SnakeGame</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="main2.css">
+
 </head>
-<body>
-  <div id = "container">
-  <h1>Press <img class="arrows" src="arrowkeys.png"> to start game and control snake!</h1>
-  <center>
-  <canvas id="gc" width="400" height="400"></canvas></center>
-  <h2>Powered by &copy; Al Pizano 2018</h2>
+<body bgcolor ="#e2e0e1">
+<div id="container">
+    <div class="text"><h1>The score is: <div class="color" id="score-text"> </div></h1></div>
+
+  <canvas id="gc" width="400" height="400"></canvas>
 
   <!-- Begin JavaScript -->
   <script>
   window.onload = function() {
   canv = document.getElementById("gc");
+
   // Graphic Buffer
   ctx = canv.getContext("2d");
+
   // Keyboard hooks
   document.addEventListener("keydown",keyPush);
+
   // Call game function 15 times every second (1000ms)
   setInterval(game,1000/15);
   setInterval(drawScore, 1000/15);
+
   }
 
 
@@ -40,8 +79,10 @@
   tail = 5;
   var score = 0;
 
+
 // Begin function game()
     function game() {
+      document.getElementById("score-text").innerHTML = score;
     px = px + xv;
     py = py + yv;
 
@@ -57,11 +98,30 @@
       if(py > tc-1) {
         py = 0;
         }
+
         // Background canvas color
-      ctx.fillStyle = "#D4B56A";
+      ctx.fillStyle = "#181818";
       ctx.fillRect(0,0,canv.width,canv.height);
+
+    /*
+        for(var i = 0; i <= 400; i += 20) {
+          ctx.moveTo(i,0);
+          ctx.lineTo(i,400);
+
+        }
+
+        for(var j = 0; j <= 400; j += 20) {
+          ctx.moveTo(0,j);
+          ctx.lineTo(400,j);
+
+        }
+
+        ctx.strokeStyle = "gray";
+        ctx.stroke();
+        */
+
         // Snake color
-      ctx.fillStyle="#44897A";
+      ctx.fillStyle="#fff8db";
       for(var i =0; i < trail.length; i++) {
         ctx.fillRect(trail[i].x*gs, trail[i].y*gs, gs-2,gs-2);
         // If you step on tail
@@ -74,7 +134,7 @@
       while(trail.length > tail) {
       trail.shift();
     }
-      // If eat on token
+      // If eat token
       if(ax==px && ay==py) {
         tail++;
         score++;
@@ -82,18 +142,20 @@
         ay = Math.floor(Math.random()*tc);
       }
 
-      ctx.fillStyle ="#6D1237";
+      ctx.fillStyle ="#ba8f8e";
       ctx.fillRect(ax*gs,ay*gs,gs-2,gs-2);
-    } // close function game() bracket
+    }
+    // close function game() bracket
 
 // DrawScore function to display score
 function drawScore() {
-  ctx.font = 'bold 15px Arial';
+  ctx.font = ' 15px Arial';
    ctx.textAlign = 'center';
    ctx. textBaseline = 'middle';
-   ctx.fillStyle = '#49001D';  // a color name or by using rgb/rgba/hex values
-   ctx.fillText("SCORE: " + score, 40, 15); // text and position
+   ctx.fillStyle = '#fff8db';  // a color name or by using rgb/rgba/hex values
+   ctx.fillText("Score : " + score, 39, 390); // text and position
 }
+
   function keyPush(evt) {
   switch(evt.keyCode) {
         case 37:
@@ -110,9 +172,8 @@ function drawScore() {
         break;
     }
   }
+
   </script>
 </div>
-
-
 </body>
 </html>
